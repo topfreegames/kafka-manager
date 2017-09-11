@@ -14,6 +14,6 @@ RUN apk -U --no-cache add --virtual .build-dependencies ca-certificates wget && 
     unzip target/universal/kafka-manager-1.3.3.13.zip -d /etc/kafka-manager && \
     rm -rf /tmp/* && \
     mv /etc/kafka-manager/kafka-manager-1.3.3.13/* /etc/kafka-manager/. && \
-    rm /etc/kafka-manager/kafka-manager-1.3.3.13
+    rm -rf /etc/kafka-manager/kafka-manager-1.3.3.13
 
     # apk del .build-dependencies
